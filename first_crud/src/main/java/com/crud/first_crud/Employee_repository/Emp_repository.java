@@ -8,4 +8,4 @@ import com.crud.first_crud.Entity.Employee_entity;
 public interface Emp_repository extends JpaRepository <Employee_entity, Long>{
 
     
-}
+}  

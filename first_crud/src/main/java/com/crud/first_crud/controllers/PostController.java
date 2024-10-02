@@ -1,7 +1,6 @@
 package com.crud.first_crud.controllers;
 
 import org.springframework.web.bind.annotation.RestController;
-
 import com.crud.first_crud.Entity.Employee_entity;
 import com.crud.first_crud.services.EmployeeService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,9 +12,10 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.PutMapping;
 
-
+ 
 
 @RestController
+
 public class PostController {
     @Autowired
     private EmployeeService employeeService;

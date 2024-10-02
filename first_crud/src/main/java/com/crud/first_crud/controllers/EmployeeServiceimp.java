@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 import com.crud.first_crud.Employee_repository.Emp_repository;
 import com.crud.first_crud.Entity.Employee_entity;
 import com.crud.first_crud.services.EmployeeService;
-
+ 
 
 @Service
 public class EmployeeServiceimp implements EmployeeService{
@@ -30,14 +30,6 @@ public class EmployeeServiceimp implements EmployeeService{
     public List<Employee_entity> readEmployees() {
         
         List <Employee_entity> employees = emp_repository.findAll();
-        // for(Employee_entity employee : employees){
-        //     Employee emp = new Employee();
-        //     emp.setName(employee.getName());
-        //     emp.setDepartment(employee.getDepartment());
-        //     allemployees.add(emp);
-
-        // }
-        // return allemployees;
         return employees;
     }
 
@@ -57,6 +49,7 @@ public class EmployeeServiceimp implements EmployeeService{
         emp_repository.save(emp);
         return "Updated Successfully";
     }
+    
 
     
 }           
